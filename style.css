@@ -1,0 +1,114 @@
+body {
+  background-image: url("./unnamed.jpg");
+  
+}
+
+.calc {
+  margin: 60px auto;
+  
+  width: 300px;
+  height: 540px;
+  border-radius: 20px;
+  border: solid rgba(47, 47, 47, 0.8) 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(90, 90, 90);
+  box-shadow: 6px 6px 6px #2e2e2e;
+  padding: 12px;
+  background-size: 300px;
+  background-image: url("./plastic.jpg");
+}
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "ac plus-minus percent division"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equals";
+  grid-gap: 4px;
+  justify-items: center;
+}
+.calc-screen {
+  height: 150px;
+  padding: 8px;
+ 
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: #004e0d;
+  border-radius: 5%;
+  box-shadow: 0 0 4px 4px inset rgb(0, 48, 19);
+  background-size: 1px 2px;
+  background-image: radial-gradient(rgb(116, 116, 116), transparent);
+  border: solid rgb(47, 47, 47) 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn {
+  height: 60px;
+  width: 60px;
+
+  border-radius: 60%;
+  text-align: center;
+  justify-content: center;
+  line-height: 60px;
+
+  cursor: pointer;
+  user-select: none;
+  border: solid 2px rgb(42, 42, 42);
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #333;
+
+  border: solid rgb(47, 47, 47);
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px #2f2f2f, inset 5px 5px 10px #292929,
+    inset -5px -5px 10px #090909;
+  color: #a7a7a7;
+  font-size: 25px;
+
+}
+.btn.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 34px;
+}
+
+.btn:active {
+  box-shadow: -5px -5px 15px #242424, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #262626;
+  font-size: 22px;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+}
+
+.btn.gray {
+  background-color: #bcbcbc;
+  color: rgb(48, 48, 48);
+  font-family: "Nunito", sans-serif;
+  
+}
+
+.btn.orange {
+  background-color: #ff9501;
+  color: #424242;
+  
+}
+
+p{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  color: transparent;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 2px rgba(204, 208, 212, 0.9), 0 15px 25px rgba(0, 0, 0, 0.3),
+    0 -2px 3px rgba(0, 0, 0, 0.1), 0 -5px 10px rgba(255, 255, 255, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.3), 0 3px 4px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.45);
+}
